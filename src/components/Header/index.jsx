@@ -1,7 +1,7 @@
 import { Container } from './styles'
 
-const Home = () => {
+const Header = () => {
   return <Container>Hello world</Container>
 };
 
-export default Home;
+export default Header;

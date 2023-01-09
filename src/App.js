@@ -1,10 +1,13 @@
 import './App.css';
 import AppRoutes from "./routes"
+import { GlobalContainer } from './global/styles';
 
 
 function App() {
   return (
-    <AppRoutes />
+    <GlobalContainer>
+      <AppRoutes />
+    </GlobalContainer>
   );
 }
 
