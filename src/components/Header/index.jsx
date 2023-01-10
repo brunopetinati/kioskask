@@ -1,10 +1,10 @@
-import { Container, Button } from './styles'
+import { Container, StyledImage, Button } from './styles'
 import DefaultImage from '../../assets/images/default.png'
 
 const Header = () => {
   return(
   <Container>
-    <img src={DefaultImage} alt="default.png" />
+    <StyledImage src={DefaultImage} alt="default.png" />
     <h1>HEADER</h1>
     <Button>X ESCI</Button>
   </Container>

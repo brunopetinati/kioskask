@@ -11,6 +11,10 @@ export const Container = styled.div`
   height: 100%;
 `;
 
+export const StyledImage = styled.img`
+  margin-left: 10px;
+`;
+
 export const Button = styled.button`
   background: #366085;
   border: 0.43554px solid #000000;

@@ -1,8 +1,14 @@
 import { Container } from './styles'
+import ProductCard from '../ProductCard';
 
 const SideBar = () => {
     return(
-      <Container></Container>
+      <Container>
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+      </Container>
     )
 };
 
