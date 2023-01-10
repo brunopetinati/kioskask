@@ -2,11 +2,12 @@ import Header from '../../components/Header'
 import MainDisplay from '../../components/MainDisplay'
 
 const MARKET_1 = () => {
-  return(<>
+  return(
+  <>
     <Header />
     <MainDisplay />
     <Header />
-    </>
+  </>
   )
 };
 
