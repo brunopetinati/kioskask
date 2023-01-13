@@ -1,8 +1,10 @@
-import { Container } from './styles'
+import { Container, InnerContainer } from './styles'
 
 const ProductDisplay = () => {
     return(
-      <Container></Container>
+      <Container>
+        <InnerContainer />
+      </Container>
     )
 };
 

@@ -1,11 +1,13 @@
-import { Container } from './styles';
+import { Container, CardStyle } from './styles';
 import DefaultImage from '../../assets/images/default.png'
 
 const ProductCard = () => {
   return(
     <Container>
-      <img src={DefaultImage} alt="" />
-      <h3>CATEGORIA</h3>
+      <CardStyle>
+        <img src={DefaultImage} alt="" />
+        <span>CATEGORIA</span>
+      </CardStyle>
     </Container>
   );
 };
