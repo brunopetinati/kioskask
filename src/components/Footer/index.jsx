@@ -7,7 +7,7 @@ const Footer = () => {
     <BiggerContainer>FOOTER</BiggerContainer>
     <SmallerContainer>
       <OrdinaOraButton>ORDINA ORA</OrdinaOraButton>
-      <CancellaButton>CANCELLA</CancellaButton>
+      <CancellaButton>SVUOTA</CancellaButton>
     </SmallerContainer>
   </Container>
   )
