@@ -20,12 +20,13 @@ export const Button = styled.button`
   border: 0.43554px solid #000000;
   border-radius: 10.453px;
 
-  width: 114.55px;
-  height: 41.81px;
+  width: 110px;
+  height: 38px;
   margin-right: 10px;
   
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 700;
   color: #FEF6FF;
+  font-size: 24px;
 `;

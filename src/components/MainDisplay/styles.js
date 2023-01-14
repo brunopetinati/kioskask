@@ -5,3 +5,7 @@ export const Container = styled.div`
   grid-template-columns: 1.2fr 4.8fr;
   grid-gap: 10px;
 `;
+
+export const InnerContainer = styled.div`
+
+`;

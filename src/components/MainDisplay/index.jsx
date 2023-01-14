@@ -1,4 +1,4 @@
-import { Container } from './styles'
+import { Container, InnerContainer } from './styles'
 import SideBar from '../SideBar';
 import ProductDisplay from '../ProductDisplay';
 import ProductListDisplay from '../ProductListDisplay'
@@ -7,10 +7,10 @@ const MainDisplay = () => {
   return(
     <Container>
       <SideBar />
-      <div>
+      <InnerContainer>
         <ProductDisplay />
         <ProductListDisplay />
-      </div>
+      </InnerContainer>
     </Container>
   )
 };
