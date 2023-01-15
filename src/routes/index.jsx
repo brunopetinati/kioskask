@@ -46,7 +46,7 @@ const AppRoutes = () => {
           <Routes>
             <Route exact path="/3" element={<MARKET_3 />}/>
           </Routes>
-          <Footer2 primary={true} text={'TORNA AL MENU, VOGLIO SCIEGLIERE ALTRE COSE'}/>
+          <Footer2 primary={true} thicker={true} text={'TORNA AL MENU, VOGLIO SCIEGLIERE ALTRE COSE'}/>
         </>
       }
       {step == 4 &&

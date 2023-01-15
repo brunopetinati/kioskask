@@ -75,21 +75,34 @@ export const ProductVariationDisplay = styled.div`
   display: grid;
   grid-template-columns: 3fr 6fr;
   width: 100%;
-  height: 90%;
-  align-items: center;
+  height: 100%;
+  align-items: flex-start;
 `;
 
 export const ProductPhotoViewContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-self: flex-start;
   width: 100%;
-  height: 100%;
+  height: 83%;
+  border: 1px solid black;
+  margin: 30px 0 0 15px;
+
+  span:nth-child(1) {
+    font-family: 'Roboto Condensed';
+    font-size: 30px;
+  }
+
+  span:nth-child(3) {
+    font-family: 'Quicksand';
+    font-size: 30px;
+  }
 `;
 
 export const GramsQuantityDisplay = styled.div`
-  height: 80%;
+  height: 100%;
   width: 100%; 
   display: grid;
   grid-template-rows: 6fr 1fr 4fr;
@@ -113,6 +126,7 @@ export const ButtonsContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding-top: 15px;
 `;
 
 export const GramDisplay = styled.div`

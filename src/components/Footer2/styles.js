@@ -7,7 +7,7 @@ export const Container = styled.div`
   align-items: center;
   background-color: #FEF6FF;
   width: 100%;
-  height: 100%;
+  height: ${props => props.thicker ? '135%' : '100%'};
 `;
 
 export const Button = styled.div`

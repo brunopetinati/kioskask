@@ -24,7 +24,7 @@ import { Container,
 import DefaultImage from '../../assets/images/default.png'
 import PlusIcon from '../../assets/icons/add.png'
 
-import ProductCard from '../ProductCard';
+
 
 const ProductDisplayIntern = () => {
     return(
@@ -46,7 +46,9 @@ const ProductDisplayIntern = () => {
           <SwipperDisplay></SwipperDisplay>
           <ProductVariationDisplay>
             <ProductPhotoViewContainer>
-              <ProductCard />
+              <span>VARIAZIONE</span>
+              <img src={DefaultImage} alt="" />
+              <span>€ 0,00</span>
             </ProductPhotoViewContainer>
             <GramsQuantityDisplay>
               <SelectGrams>
