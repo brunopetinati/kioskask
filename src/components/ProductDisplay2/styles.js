@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 69%;
+  height: 100%;
   width: 100%;
   background-color: #FEF6FF;
 `;
@@ -107,20 +107,6 @@ export const SmallGramButton = styled.div`
   font-size: 16px;
 `;
 
-export const MinusIconButton = styled.button`
-  background-color: #fff;
-  width: 18px;
-  height: 6px;
-  border: none;
-  border-radius: 1px;
-`;
-
-export const PlusIconMinorButton = styled.img`
-  width: 18px;
-  height: 18px;
-`;
-
-
 export const GramDisplay = styled.div`
   height: 60%;
   width: 100%;
@@ -132,7 +118,6 @@ export const GramDisplay = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 55px;
-  margin-top: 25px;
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
@@ -155,35 +140,56 @@ export const GramButton = styled.div`
   font-size: 24px;
 `;
 
-export const PlusIconButton = styled.img`
-  width: 32px;
-  height: 32px;
-`;
-
 export const MinusGramSignButton = styled.button`
   background-color: #fff;
-  width: 32px;
-  height: 10px;
+  width: 40px;
+  height: 12px;
   border: none;
   border-radius: 3px;
 `;
 
+export const PlusIconButton = styled.img`
+  width: 40px;
+  height: 40px;
+`;
 
+
+export const PlusIconMinorButton = styled.img`
+  width: 18px;
+  height: 18px;
+`;
+
+export const MinusSignButton = styled.button`
+  background-color: #fff;
+  width: 18px;
+  height: 6px;
+  border: none;
+  border-radius: 1px;
+`;
+
+export const ButtonsFooterContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  justify-self: center;
+`
 
 export const AggiungiButton = styled.div`
   height: 40%;
-  width: 80%;
+  width: 49%;
   background: #62BAAC;
   border-radius: 14px;
   justify-self: center;
   align-self: flex-end;
   margin-bottom: 40px;
   font-family: 'Quicksand';
-  font-size: 30px;
+  font-size: 25px;
   color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 `;
-

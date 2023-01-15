@@ -10,15 +10,17 @@ import { Container,
   GramDisplay,
   SmallGramButton, 
   GramButton,
-  MinusGramSignButton,
   PlusIconButton,
   PlusIconMinorButton,
-  MinusIconButton, 
-  AggiungiButton } from './styles'
+  MinusGramSignButton,
+  MinusSignButton, 
+  ButtonsFooterContainer,
+  AggiungiButton
+ } from './styles'
 import DefaultImage from '../../assets/images/default.png'
 import PlusIcon from '../../assets/icons/add.png'
 
-const ProductDisplay = () => {
+const ProductDisplay2 = () => {
     return(
       <Container>
         <InnerContainer>
@@ -39,20 +41,20 @@ const ProductDisplay = () => {
             <SelectGrams>
               <ButtonsContainer>
                 <SmallGramButton>
-                  <MinusIconButton />
+                  <MinusSignButton />
                   <span>10 g</span>
                   <PlusIconMinorButton src={PlusIcon} alt="" />
                 </SmallGramButton>
                 <SmallGramButton>
-                  <MinusIconButton />
+                  <MinusSignButton />
                   <span>50 g</span>
                   <PlusIconMinorButton src={PlusIcon} alt="" />
                 </SmallGramButton><SmallGramButton>
-                  <MinusIconButton />
+                  <MinusSignButton />
                   <span>100 g</span>
                   <PlusIconMinorButton src={PlusIcon} alt="" />
                 </SmallGramButton><SmallGramButton>
-                  <MinusIconButton />
+                  <MinusSignButton />
                   <span>500 g</span>
                   <PlusIconMinorButton src={PlusIcon} alt="" />
                 </SmallGramButton>
@@ -61,14 +63,17 @@ const ProductDisplay = () => {
             </SelectGrams>
             <GramButton>
               <MinusGramSignButton />
-              1
+                1
               <PlusIconButton src={PlusIcon} alt="" />
             </GramButton>
           </GramsQuantityDisplay>
-          <AggiungiButton>AGGIUNGI</AggiungiButton>
+            <ButtonsFooterContainer>
+              <AggiungiButton>AGGIUNGI</AggiungiButton>
+              <AggiungiButton>PERSONALIZZA</AggiungiButton>
+            </ButtonsFooterContainer>
         </InnerContainer>
       </Container>
     )
 };
 
-export default ProductDisplay;
+export default ProductDisplay2;

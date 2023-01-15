@@ -1,10 +1,10 @@
-import MainDisplay from '../../components/MainDisplay'
+import MainDisplayStep1 from '../../components/MainDisplayStep1'
 import { Container } from './styles'
 
 const MARKET_1 = () => {
   return(
   <Container>
-    <MainDisplay />
+    <MainDisplayStep1 />
   </Container>
   )
 };

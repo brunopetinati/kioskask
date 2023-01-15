@@ -3,7 +3,7 @@ import SideBar from '../SideBar';
 import ProductDisplay from '../ProductDisplay';
 import ProductListDisplay from '../ProductListDisplay'
 
-const MainDisplay = () => {
+const MainDisplayStep1 = () => {
   return(
     <Container>
       <SideBar />
@@ -15,4 +15,4 @@ const MainDisplay = () => {
   )
 };
 
-export default MainDisplay;
+export default MainDisplayStep1;
