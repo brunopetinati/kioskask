@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Header2 from '../components/Header2'
 import Footer from '../components/Footer'
 import Footer2 from '../components/Footer2'
+import { useDispatch, useSelector } from "react-redux";
 
 
 
@@ -19,18 +20,18 @@ import MARKET_4 from '../screens/market_4'
 
 const AppRoutes = () => {
 
-  const step = 3;
+  const step = useSelector((state) => state.step)
 
   return (
     <AnimatePresence>
-      {step == 1 && 
+      {step === 0 && 
       <Routes>
         <Route exact path="/" element={<ScreenSaver />}/>
         <Route exact path="/2" element={<LandingPage />}/>
         <Route exact path="/3" element={<FinalScreen />}/>
       </Routes>
       }
-      {step == 2 && 
+      {step === 1 && 
         <>
           <Header />     
             <Routes>
@@ -40,7 +41,7 @@ const AppRoutes = () => {
           <Footer />
         </> 
       }
-      {step == 3 &&
+      {step === 2 &&
         <>
           <Header2 back={'< TORNA'} next={'AVANTI >'}/>
           <Routes>
@@ -49,12 +50,12 @@ const AppRoutes = () => {
           <Footer2 primary={true} thicker={true} text={'TORNA AL MENU, VOGLIO SCIEGLIERE ALTRE COSE'}/>
         </>
       }
-      {step == 4 &&
+      {step === 3 &&
         <>
           <Header2 back={'< VAI AI PRODOTTI'} next={'FINE >'}/>
-          <Routes>
-            <Route exact path="/4" element={<MARKET_4 />}/>
-          </Routes>
+            <Routes>
+              <Route exact path="/4" element={<MARKET_4 />}/>
+            </Routes>
           <Footer2 text={'CONFERMA ORDINE'}/>
         </>
       }

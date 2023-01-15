@@ -47,16 +47,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Button = styled.button`
-  font-size: 32px;
-  width: 80%;
-  height: 10%;
-  font-family: 'Quicksand';
-  border-radius: 18px;
-  border: 1px solid #000000;
-  background-color: #fff;
-  margin-top: 200px;
-`;
+
 
 export const Footer = styled.div`
   width: 100%;

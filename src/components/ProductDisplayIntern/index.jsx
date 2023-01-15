@@ -18,7 +18,6 @@ import { Container,
   PlusIconMinorButton,
   MinusGramSignButton,
   MinusSignButton, 
-  ButtonsFooterContainer,
   AggiungiButton
  } from './styles'
 import DefaultImage from '../../assets/images/default.png'
