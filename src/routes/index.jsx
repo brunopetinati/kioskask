@@ -40,13 +40,22 @@ const AppRoutes = () => {
         </> 
       }
       {step == 3 &&
-      <>
-        <Header2 />
-        <Routes>
-          <Route exact path="/4" element={<MARKET_4 />}/>
-        </Routes>
-        <Footer2 />
-      </>
+        <>
+          <Header2 back={'< TORNA'} next={'AVANTI >'}/>
+          <Routes>
+            <Route exact path="/4" element={<MARKET_4 />}/>
+          </Routes>
+          <Footer2 primary={true} text={'TORNA AL MENU, VOGLIO SCIEGLIERE ALTRE COSE'}/>
+        </>
+      }
+      {step == 4 &&
+        <>
+          <Header2 back={'< VAI AI PRODOTTI'} next={'FINE >'}/>
+          <Routes>
+            <Route exact path="/4" element={<MARKET_4 />}/>
+          </Routes>
+          <Footer2 text={'CONFERMA ORDINE'}/>
+        </>
       }
     </AnimatePresence>
   );

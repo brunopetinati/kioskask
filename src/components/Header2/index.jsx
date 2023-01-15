@@ -1,11 +1,11 @@
 import { Container, StyledImage, Button } from './styles'
 import DefaultImage from '../../assets/images/default.png'
 
-const Header2 = () => {
+const Header2 = ({back, next}) => {
   return(
   <Container>
-    <Button>&lt; VAI AI PRODOTTI</Button>
-    <Button>FINE &gt;</Button>
+    <Button>{back}</Button>
+    <Button>{next}</Button>
   </Container>
   )
 };

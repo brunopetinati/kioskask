@@ -21,5 +21,6 @@ export const Button = styled.div`
   justify-content: center;
   align-items: center;
   font-family: 'Quicksand';
-  font-size: 40px;
+  font-size: 28px;
+  text-align: center;
 `;

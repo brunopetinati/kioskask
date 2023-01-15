@@ -1,9 +1,9 @@
 import { Container, Button } from './styles'
 
-const Footer2 = () => {
+const Footer2 = ({primary = false, text}) => {
   return(
   <Container>
-    <Button>CONFERMA ORDINE</Button>
+    <Button primary={primary}>{text}</Button>
   </Container>
   )
 };
