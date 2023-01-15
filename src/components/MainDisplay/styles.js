@@ -7,5 +7,5 @@ export const Container = styled.div`
 `;
 
 export const InnerContainer = styled.div`
-
+  width: 100%;
 `;

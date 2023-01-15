@@ -1,4 +1,19 @@
-import { Container, InnerContainer, Info, InnerInfo, ProducPricetDisplay, ProductInfoDisplay, GramsQuantity, AggiungiButton } from './styles'
+import { Container, 
+  InnerContainer, 
+  Info, 
+  InnerInfo, 
+  ProducPricetDisplay, 
+  ProductInfoDisplay, 
+  GramsQuantityDisplay, 
+  SelectGrams, 
+  ButtonsContainer,
+  GramDisplay,
+  SmallGramButton, 
+  GramButton,
+  PlusSignButton,
+  VerticalDiv,
+  MinusSignButton, 
+  AggiungiButton } from './styles'
 import DefaultImage from '../../assets/images/default.png'
 
 const ProductDisplay = () => {
@@ -18,8 +33,41 @@ const ProductDisplay = () => {
               </ProductInfoDisplay>
             </InnerInfo>
           </Info>
-          <GramsQuantity></GramsQuantity>
-          <AggiungiButton></AggiungiButton>
+          <GramsQuantityDisplay>
+            <SelectGrams>
+              <ButtonsContainer>
+                <SmallGramButton>
+                  <MinusSignButton />
+                  <span>10 g</span>
+                  <PlusSignButton>
+                    <VerticalDiv/>
+                  </PlusSignButton>
+                </SmallGramButton>
+                <SmallGramButton>
+                  <MinusSignButton />
+                  <span>50 g</span>
+                  <PlusSignButton>
+                    <VerticalDiv/>
+                  </PlusSignButton>
+                </SmallGramButton><SmallGramButton>
+                  <MinusSignButton />
+                  <span>100 g</span>
+                  <PlusSignButton>
+                    <VerticalDiv/>
+                  </PlusSignButton>
+                </SmallGramButton><SmallGramButton>
+                  <MinusSignButton />
+                  <span>500 g</span>
+                  <PlusSignButton>
+                    <VerticalDiv/>
+                  </PlusSignButton>
+                </SmallGramButton>
+              </ButtonsContainer>
+              <GramDisplay>100g</GramDisplay>
+            </SelectGrams>
+            <GramButton>1</GramButton>
+          </GramsQuantityDisplay>
+          <AggiungiButton>AGGIUNGI</AggiungiButton>
         </InnerContainer>
       </Container>
     )
