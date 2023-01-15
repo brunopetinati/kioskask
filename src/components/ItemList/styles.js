@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 2fr 5fr 3fr;
-  width: 555px;
+  width: 96.5%;
   height: 40px;
   padding: 10px;
   background-color: #FFFFFF;

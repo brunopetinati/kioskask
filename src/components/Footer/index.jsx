@@ -1,5 +1,4 @@
 import { Container, BiggerContainer, SmallerContainer, OrdinaOraButton, CancellaButton } from './styles'
-import DefaultImage from '../../assets/images/default.png'
 
 const Footer = () => {
   return(
