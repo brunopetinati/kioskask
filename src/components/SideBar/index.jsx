@@ -11,6 +11,7 @@ const SideBar = () => {
         <ProductCard />
         <ProductCard />
         <ProductCard />
+        <ProductCard />
       </Container>
     )
 };
