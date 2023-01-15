@@ -12,9 +12,14 @@ const Header2 = ({back, next}) => {
   const handleClick = () => {
 
     console.log(step);
+
+    if (step === 2){
+      console.log('sim, step', 3)
+      dispatch(previousStep());
+      navigate('/');
+    };
   
     if (step === 3){
-      console.log('sim, step', 3)
       dispatch(previousStep(2));
       navigate('/');
     };
