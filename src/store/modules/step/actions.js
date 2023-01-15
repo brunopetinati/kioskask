@@ -5,9 +5,9 @@ export const nextStep = (step) => ({
   step,
 });
 
-export const previousStep = (step) => ({
+export const previousStep = (step2) => ({
   type: PREVIOUS_STEP,
-  step,
+  step2,
 });
 
 
