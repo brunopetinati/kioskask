@@ -12,6 +12,7 @@ import LandingPage from '../screens/LandingPage';
 import FinalScreen from '../screens/FinalScreen';
 import MARKET_1 from '../screens/market_1'
 import MARKET_2 from '../screens/market_2'
+import MARKET_3 from '../screens/market_3'
 import MARKET_4 from '../screens/market_4'
 
 
@@ -43,7 +44,7 @@ const AppRoutes = () => {
         <>
           <Header2 back={'< TORNA'} next={'AVANTI >'}/>
           <Routes>
-            <Route exact path="/4" element={<MARKET_4 />}/>
+            <Route exact path="/3" element={<MARKET_3 />}/>
           </Routes>
           <Footer2 primary={true} text={'TORNA AL MENU, VOGLIO SCIEGLIERE ALTRE COSE'}/>
         </>
