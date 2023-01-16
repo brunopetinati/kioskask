@@ -17,15 +17,22 @@ import { Container,
   PlusIconButton,
   PlusIconMinorButton,
   MinusGramSignButton,
-  MinusSignButton, 
+  MinusIconButton, 
   AggiungiButton
  } from './styles'
 import DefaultImage from '../../assets/images/default.png'
 import PlusIcon from '../../assets/icons/add.png'
-
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom"; 
+import { addGrams,removeGrams } from '../../store/modules/grams/actions';
 
 
 const ProductDisplayIntern = () => {
+
+  const navigate = useNavigate(); 
+  const dispatch = useDispatch();
+  const grams = useSelector((state) => state.grams);
+
     return(
       <Container>
         <InnerContainer>
@@ -52,31 +59,33 @@ const ProductDisplayIntern = () => {
             <GramsQuantityDisplay>
               <SelectGrams>
                 <ButtonsContainer>
-                  <SmallGramButton>
-                    <MinusSignButton />
+                <SmallGramButton>
+                  <MinusIconButton onClick={() => dispatch(removeGrams(10))}/>
                     <span>10 g</span>
-                    <PlusIconMinorButton src={PlusIcon} alt="" />
-                  </SmallGramButton>
-                  <SmallGramButton>
-                    <MinusSignButton />
-                    <span>50 g</span>
-                    <PlusIconMinorButton src={PlusIcon} alt="" />
-                  </SmallGramButton><SmallGramButton>
-                    <MinusSignButton />
-                    <span>100 g</span>
-                    <PlusIconMinorButton src={PlusIcon} alt="" />
-                  </SmallGramButton><SmallGramButton>
-                    <MinusSignButton />
-                    <span>500 g</span>
-                    <PlusIconMinorButton src={PlusIcon} alt="" />
-                  </SmallGramButton>
+                  <PlusIconMinorButton src={PlusIcon} alt="" onClick={() => dispatch(addGrams(10))} />
+                </SmallGramButton>
+                <SmallGramButton>
+                  <MinusIconButton onClick={() => dispatch(removeGrams(50))}/>
+                  <span>50 g</span>
+                  <PlusIconMinorButton src={PlusIcon} alt="" onClick={() => dispatch(addGrams(50))} />
+                </SmallGramButton>
+                <SmallGramButton>
+                  <MinusIconButton onClick={() => dispatch(removeGrams(100))}/>
+                  <span>100 g</span>
+                  <PlusIconMinorButton src={PlusIcon} alt="" onClick={() => dispatch(addGrams(100))} />
+                </SmallGramButton>
+                <SmallGramButton>
+                  <MinusIconButton onClick={() => dispatch(removeGrams(500))}/>
+                  <span>500 g</span>
+                  <PlusIconMinorButton src={PlusIcon} alt="" onClick={() => dispatch(addGrams(500))} />
+                </SmallGramButton>
                 </ButtonsContainer>
-                <GramDisplay>100g</GramDisplay>
+                <GramDisplay>{grams}g</GramDisplay>
               </SelectGrams>
               <GramButton>
-                <MinusGramSignButton />
+                <MinusIconButton onClick={() => dispatch(removeGrams(1))}/>
                   1
-                <PlusIconButton src={PlusIcon} alt="" />
+                <PlusIconButton src={PlusIcon} alt="" onClick={() => dispatch(addGrams(1))}/>
               </GramButton>
               <PriceView>€ 0,00</PriceView>
             </GramsQuantityDisplay>

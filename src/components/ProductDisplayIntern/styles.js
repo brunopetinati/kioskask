@@ -194,6 +194,8 @@ export const GramButton = styled.div`
   font-size: 24px;
 `;
 
+
+
 export const MinusGramSignButton = styled.button`
   background-color: #fff;
   width: 40px;
@@ -213,7 +215,7 @@ export const PlusIconMinorButton = styled.img`
   height: 18px;
 `;
 
-export const MinusSignButton = styled.button`
+export const MinusIconButton = styled.button`
   background-color: #fff;
   width: 18px;
   height: 6px;

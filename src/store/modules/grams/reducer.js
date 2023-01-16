@@ -12,9 +12,15 @@ const gramsReducer = (state = 0, action) => {
 
       const { removeGrams } = action;
 
-      if(state > 0) { 
-        return state - removeGrams; 
+      if(state - removeGrams < 0) { 
+        return 
       }
+
+      if(state <= 0) {
+        return
+      }
+
+      return state - removeGrams; 
 
     break;
 
