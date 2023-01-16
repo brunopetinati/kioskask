@@ -19,11 +19,13 @@ import DefaultImage from '../../assets/images/default.png'
 import PlusIcon from '../../assets/icons/add.png'
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom"; 
-
+import { addGrams,removeGrams } from '../../store/modules/grams/actions';
 
 const ProductDisplay = () => {
 
   const navigate = useNavigate(); 
+  const dispatch = useDispatch();
+  const grams = useSelector((state) => state.grams);
 
   const handleClick = () => {
     navigate('/2');
@@ -49,30 +51,30 @@ const ProductDisplay = () => {
           <SelectGrams>
             <ButtonsContainer>
               <SmallGramButton>
-                <MinusIconButton />
+                <MinusIconButton onClick={() => dispatch(removeGrams(10))}/>
                 <span>10 g</span>
-                <PlusIconMinorButton src={PlusIcon} alt="" />
+                <PlusIconMinorButton src={PlusIcon} alt="" onClick={() => dispatch(addGrams(10))} />
               </SmallGramButton>
               <SmallGramButton>
-                <MinusIconButton />
+                <MinusIconButton onClick={() => dispatch(removeGrams(50))}/>
                 <span>50 g</span>
-                <PlusIconMinorButton src={PlusIcon} alt="" />
+                <PlusIconMinorButton src={PlusIcon} alt="" onClick={() => dispatch(addGrams(50))} />
               </SmallGramButton><SmallGramButton>
-                <MinusIconButton />
+                <MinusIconButton onClick={() => dispatch(removeGrams(100))}/>
                 <span>100 g</span>
-                <PlusIconMinorButton src={PlusIcon} alt="" />
+                <PlusIconMinorButton src={PlusIcon} alt="" onClick={() => dispatch(addGrams(100))} />
               </SmallGramButton><SmallGramButton>
-                <MinusIconButton />
+                <MinusIconButton onClick={() => dispatch(removeGrams(500))}/>
                 <span>500 g</span>
-                <PlusIconMinorButton src={PlusIcon} alt="" />
+                <PlusIconMinorButton src={PlusIcon} alt="" onClick={() => dispatch(addGrams(500))} />
               </SmallGramButton>
             </ButtonsContainer>
-            <GramDisplay>100g</GramDisplay>
+            <GramDisplay>{grams}g</GramDisplay>
           </SelectGrams>
           <GramButton>
-            <MinusGramSignButton />
+            <MinusGramSignButton onClick={() => dispatch(removeGrams(1))}/>
             1
-            <PlusIconButton src={PlusIcon} alt="" />
+            <PlusIconButton src={PlusIcon} alt="" onClick={() => dispatch(addGrams(1))}/>
           </GramButton>
         </GramsQuantityDisplay>
         <AggiungiButton onClick={() => handleClick()}>AGGIUNGI</AggiungiButton>
